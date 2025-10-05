@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Bùi Nhật Thành</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="navbar">
+      <div class="nav-wrap">
+        <div class="brand">
+          <img src="images/OIP.webp" alt="Logo" class="logo" />
+          <!-- Bỏ chữ 'Code with Tinh' theo yêu cầu -->
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#home" class="active">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#assignments">Bài tập</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="pill">
+            <i class="fa-solid fa-shield-halved"></i> Information Security
+          </p>
+          <h1>
+            Xin chào, mình là <span class="accent">Bùi Nhật Thành</span> 👋
+          </h1>
+          <p class="sub">Sinh viên ATTT HCMUTE</p>
+          <div class="actions">
+            <a class="btn primary" href="#assignments"
+              ><i class="fa-solid fa-code"></i> Xem Bài tập</a
+            >
+            <a class="btn ghost" href="#contact"
+              ><i class="fa-solid fa-envelope"></i> Liên hệ</a
+            >
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/ca_nhan.jpg" alt="Avatar" loading="lazy" />
+        </div>
+      </div>
+      <div class="bg-blobs"></div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Giới thiệu</h2>
+          <p>
+            Hiện đang học năm 3 ngành An toàn thông tin tại Trường ĐH Sư Phạm Kỹ
+            Thuật TP.HCM. Định hướng theo <b>SOC</b> (giám sát & ứng phó sự cố),
+            làm <b>chuyên viên đề xuất giải pháp bảo mật ứng dụng</b>, thích mày
+            mò <b>forensics</b>, <b>malware analysis</b>, tự động hoá hunting
+            bằng <b>Splunk</b>/<b>SIEM</b>, dựng lab thử nghiệm, và săn flag
+            trên TryHackMe cho vui.
+          </p>
+          <ul class="info">
+            <li>
+              <i class="fa-regular fa-user"></i><b>Họ tên:</b> Bùi Nhật Thành
+            </li>
+            <li>
+              <i class="fa-regular fa-calendar"></i><b>Ngày sinh:</b> 22/11/2005
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i><b>Địa chỉ:</b> KTX khu B
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i
+              ><b>Email:</b> 23162091@student.hcmute.edu.vn
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i><b>Điện thoại:</b> 0363923852
+            </li>
+            <li>
+              <i class="fa-solid fa-graduation-cap"></i><b>Trường:</b> ĐH SPKT
+              TP.HCM
+            </li>
+          </ul>
+        </div>
+
+        <div class="card soft">
+          <h3 class="card-title">
+            <i class="fa-solid fa-id-badge"></i> Quick Profile
+          </h3>
+          <div class="chips">
+            <span class="chip">Cybersecurity</span>
+            <span class="chip">TryHackMe</span>
+            <span class="chip">CompTIA Security+</span>
+            <span class="chip">Forensics</span>
+            <span class="chip">Malware Analysis</span>
+            <span class="chip">SOC</span>
+            <span class="chip">Splunk</span>
+            <span class="chip">Autopsy</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML/CSS</span>
+          </div>
+          <p class="muted">Mục tiêu: Trở thành Kỹ sư An toàn thông tin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <h3 style="margin: 10px 0 6px">Education</h3>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="dot"></span>
+            <div class="tl-card">
+              <h4 class="tl-title">
+                HCMUTE – Ho Chi Minh City University of Technology and Education
+              </h4>
+              <p class="tl-sub">Information Security</p>
+              <p class="tl-time">2023 — Now</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <span class="dot"></span>
+            <div class="tl-card">
+              <h4 class="tl-title">Pham Van Dong High School</h4>
+              <p class="tl-time">2020 — 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <div class="skills">
+          <div class="skill">
+            <span>Forensics</span>
+            <div class="bar"><i style="width: 75%"></i></div>
+            <b>75%</b>
+          </div>
+          <div class="skill">
+            <span>SOC / SIEM (Splunk)</span>
+            <div class="bar"><i style="width: 70%"></i></div>
+            <b>70%</b>
+          </div>
+          <div class="skill">
+            <span>Malware Analysis</span>
+            <div class="bar"><i style="width: 65%"></i></div>
+            <b>65%</b>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar"><i style="width: 70%"></i></div>
+            <b>70%</b>
+          </div>
+          <div class="skill">
+            <span>HTML/CSS</span>
+            <div class="bar"><i style="width: 85%"></i></div>
+            <b>85%</b>
+          </div>
+          <div class="skill">
+            <span>Autopsy / DFIR tools</span>
+            <div class="bar"><i style="width: 68%"></i></div>
+            <b>68%</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSIGNMENTS -->
+    <section id="assignments" class="section">
+      <div class="container">
+        <h2 class="section-title">Bài tập</h2>
+
+        <div class="filters">
+          <button class="tag active" data-filter="all">All</button>
+          <button class="tag" data-filter="T2">Tuần 2</button>
+          <button class="tag" data-filter="T3">Tuần 3</button>
+          <button class="tag" data-filter="T4">Tuần 4</button>
+          <button class="tag" data-filter="T5">Tuần 5</button>
+          <button class="tag" data-filter="T6">Tuần 6</button>
+          <button class="tag" data-filter="T7">Tuần 7</button>
+          <button class="tag" data-filter="T12">Tuần 12</button>
+          <button class="tag" data-filter="T13">Tuần 13</button>
+        </div>
+
+        <div class="cards" id="cards">
+          <!-- Tuần 2 -->
+          <article class="card assign T2">
+            <h3>Tuần 2 - Bài 1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://buinhatthanhgroup7-bmcqa4e7g2ckgqef.eastasia-01.azurewebsites.net/"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T3">
+            <h3>Tuần 3 - Bài 2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://buoi3-tuan2.azurewebsites.net/"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+
+          <!-- Tuần 4 -->
+          <article class="card assign T4">
+            <h3>Tuần 4 - Bài 5.1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://buoi05-ex1.onrender.com/"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T4">
+            <h3>Tuần 4 - Bài 5.2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://ex5-2-ykz7.onrender.com/"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+
+          <!-- Tuần 5 -->
+          <article class="card assign T5">
+            <h3>Tuần 5 - Bài 6.1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://ex6-1-r3fl.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T5">
+            <h3>Tuần 5 - Bài 6.2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://ex6-2-dpjh.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+
+          <!-- Tuần 6 -->
+          <article class="card assign T6">
+            <h3>Tuần 6 - Bài 8</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://web-ca-nhan-bai08.onrender.com/"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T6">
+            <h3>Tuần 6 - Bài 9.1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://ex9-1-n12l.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T6">
+            <h3>Tuần 6 - Bài 9.2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://ex9-2-bbea.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+
+          <!-- Tuần 7 -->
+          <article class="card assign T7">
+            <h3>Ex 7.1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://cddownload-rpw0.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T7">
+            <h3>Ex 7.2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://cdlist-6jzq.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+
+          <!-- Tuần 12 -->
+          <article class="card assign T12">
+            <h3>Bài 12.1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://sqlmapgetway.onrender.com/sqlgateway"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T12">
+            <h3>Bài 12.2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://chap12-2-2jl1.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+
+          <!-- Tuần 13 -->
+          <article class="card assign T13">
+            <h3>Bài 13.1</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://chap13-1-z02g.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+          <article class="card assign T13">
+            <h3>Bài 13.2</h3>
+            <a
+              class="btn tiny"
+              target="_blank"
+              href="https://chap13-2-3qxm.onrender.com"
+              >Xem</a
+            >
+            <span class="status done">Đã hoàn thành</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Liên hệ</h2>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              23162091@student.hcmute.edu.vn
+            </li>
+            <li><i class="fa-solid fa-phone"></i> 0363923852</li>
+            <li><i class="fa-solid fa-location-dot"></i> KTX khu B</li>
+          </ul>
+
+          <!-- Bỏ cụm info-card theo yêu cầu, chỉ để social -->
+          <div class="socials" style="margin-top: 12px">
+            <a
+              href="https://www.facebook.com/thanh.1804.o"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://github.com/BuiNhatThanh2091"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Gửi tin nhắn</h3>
+          <form id="contactForm" class="contact-grid">
+            <div class="form-group">
+              <label for="name">Họ và tên</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Bùi Nhật Thành"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group form-full">
+              <label for="subject">Chủ đề</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Nội dung chính..."
+                required
+              />
+            </div>
+            <div class="form-group form-full">
+              <label for="message">Tin nhắn</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Bạn muốn trao đổi điều gì?"
+                required
+              ></textarea>
+            </div>
+            <div class="form-actions form-full">
+              <button class="btn primary" type="submit">
+                <i class="fa-regular fa-paper-plane"></i> Gửi
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Bùi Nhật Thành. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
