@@ -16,21 +16,6 @@ const setActive = () => {
 window.addEventListener("scroll", setActive);
 setActive();
 
-// Filters (assignments)
-const filterBtns = document.querySelectorAll(".tag");
-const cards = document.querySelectorAll(".assign");
-filterBtns.forEach((b) => {
-  b.addEventListener("click", () => {
-    filterBtns.forEach((x) => x.classList.remove("active"));
-    b.classList.add("active");
-    const key = b.dataset.filter;
-    cards.forEach((c) => {
-      c.style.display =
-        key === "all" || c.classList.contains(key) ? "" : "none";
-    });
-  });
-});
-
 // Contact form fake submit
 document.getElementById("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();

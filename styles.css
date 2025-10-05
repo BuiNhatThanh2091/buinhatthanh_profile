@@ -345,24 +345,6 @@ a {
 }
 
 /* ASSIGNMENTS */
-.filters {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 14px;
-  flex-wrap: wrap;
-}
-.tag {
-  background: transparent;
-  color: #cfe4ff;
-  border: 1px solid var(--border);
-  padding: 6px 10px;
-  border-radius: 999px;
-  cursor: pointer;
-}
-.tag.active,
-.tag:hover {
-  background: rgba(96, 165, 250, 0.14);
-}
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
